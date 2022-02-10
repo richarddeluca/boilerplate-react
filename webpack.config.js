@@ -1,10 +1,11 @@
 const path = require('path')
 
 module.exports = {
-  entry: path.resolve(_dirnane, 'src', 'index.jsx'),
+  mode: 'development',
+  entry: path.resolve(__dirname, 'src', 'index.jsx'),
   output: {
-    path: path.resolve(_dirname, 'dist'),
-    filename: path.resolve(_dirname, 'bundle.js')
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
   },
   resolve: {
     extensions: ['.js', '.jsx']
