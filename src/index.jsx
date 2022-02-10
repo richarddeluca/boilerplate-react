@@ -1,4 +1,6 @@
-import react from 'react'
-import { render } from 'react-dom'
+import './styles/global.scss'
 
-render(<h2>Lorem ipsum</h2>, document.getElementById('root'))
+import { render } from 'react-dom'
+import { App } from './App'
+
+render(<App />, document.getElementById('root'))
